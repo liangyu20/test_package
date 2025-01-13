@@ -1,0 +1,13 @@
+name: test_package  # 环境名称，可自定义
+channels:
+  - conda-forge    # 包源，推荐优先使用 conda-forge
+  - defaults       # 默认包源
+dependencies:
+  - python=3.9     # 指定 Python 版本
+  - numpy          # 需要的依赖包
+  - pandas         # 示例依赖
+  - scipy
+  - pytest         # 测试框架
+  - pip            # 安装 pip 包管理器
+  - pip:
+      - some_pip_package  # 如果某些包只能通过 pip 安装
