@@ -9,5 +9,3 @@ dependencies:
   - scipy
   - pytest         # 测试框架
   - pip            # 安装 pip 包管理器
-  - pip:
-      - some_pip_package  # 如果某些包只能通过 pip 安装
