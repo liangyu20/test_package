@@ -32,7 +32,26 @@ def snell(theta_inc: float, n1: float, n2: float) -> float:
     """
     return np.arcsin(n1 / n2 * np.sin(theta_inc))
 
-def my_func(param):
+def my_func(param: int) -> bool:
+    """
+    function for branch coverage test
+
+    Parameters
+    ----------
+    param : int
+
+    Returns
+    ----------
+    True or False : bool
+        True when param is greater than 0, otherwise False
+
+    Examples
+    ----------
+    >>> my_func(1)
+    True
+    >>> my_func(0)
+    False
+    """
     if param > 0:
         return True
     else:
